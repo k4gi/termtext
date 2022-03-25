@@ -12,7 +12,9 @@ def main(stdscr):
     smolwin.box(0,0)
 
     dialogtest.title = "Speaker's Name"
+    dialogtest.prompt = ">>>"
     dialogtest.show_title()
+    dialogtest.show_prompt()
 
     smolwin.noutrefresh()
     dialogtest.noutrefresh()

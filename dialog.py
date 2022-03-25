@@ -23,3 +23,9 @@ class Dialog:
         self.border.box(0,0)
         self.border.addstr(0,1,self.title)
 
+
+    def show_prompt(self):
+        coords = self.border.getmaxyx()
+        self.border.addstr(coords[0]-1,coords[1]-1-len(self.prompt), self.prompt)
+
+
